@@ -1,10 +1,3 @@
----
-title: "RFM"
-author: "Syam Murali"
-date: "23 February 2016"
-output: html_document
----
-
 # RFM Analysis (Recency, Frequency and Monetary)
 
 RFM is frequently employed in customer analytics and tools like SPSS have built in functions to perform it. This repository is an effort to make a similar package for R.
@@ -89,8 +82,6 @@ rfm(sales,analysisDate = "2016/01/20", customer = "customer", date = "billDate",
 #install_github("astrosyam/RFM")
 ```
 
-
-
 <i>Disclaimer:
 This is an initial commit and is therefore limited to basic RFM.
 The code is currently not optimized or bug free.</i>
@@ -103,3 +94,4 @@ Future commits will add the following functionalities:
 
 2. Specify custom bins for scoring
 
+3. Customer purchase latency
