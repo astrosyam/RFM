@@ -32,8 +32,9 @@ Custom column names may be specified:
 
 ```{r}
 #Creating  sales data  set with customer, billDate and revenue as column names
-names(sales) = c("customer", "billDate", "revenue")
-rfm(sales,analysisDate = "2016/01/20", customer = "customer", date = "billDate", revenue = "revenue")
+newsales = sales
+names(newsales) = c("customer", "billDate", "revenue")
+rfm(newsales,analysisDate = "2016/01/20", customer = "customer", date = "billDate", revenue = "revenue")
 ```
 
 <b>Installation</b>

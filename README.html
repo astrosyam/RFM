@@ -105,8 +105,9 @@ rfm(sales,analysisDate = &quot;2016/01/20&quot;)</code></pre>
 <p>By default, the function looks for “customer”, “date” and “amount” columns.</p>
 <p>Custom column names may be specified:</p>
 <pre class="r"><code>#Creating  sales data  set with customer, billDate and revenue as column names
-names(sales) = c(&quot;customer&quot;, &quot;billDate&quot;, &quot;revenue&quot;)
-rfm(sales,analysisDate = &quot;2016/01/20&quot;, customer = &quot;customer&quot;, date = &quot;billDate&quot;, revenue = &quot;revenue&quot;)</code></pre>
+newsales = sales
+names(newsales) = c(&quot;customer&quot;, &quot;billDate&quot;, &quot;revenue&quot;)
+rfm(newsales,analysisDate = &quot;2016/01/20&quot;, customer = &quot;customer&quot;, date = &quot;billDate&quot;, revenue = &quot;revenue&quot;)</code></pre>
 <pre><code>##                   customer Recency Frequency Monetary RFM_Score
 ## 1            Bunting, Dana      19        13      669       555
 ## 10 Williams Taylor, Joshua      34         5      194       511
